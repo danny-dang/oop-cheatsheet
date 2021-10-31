@@ -12,11 +12,11 @@ Giả sử muốn tạo 1 loại các objects để lưu các thông tin, tính 
 ```javascript
 const cb300r = {
     name: 'Honda CB300R',
-    brand: 'Honda'
-	displacement: 286,
-	fuelGauge: 10,
-	weight: 147,
-	engineStart: () => {
+    brand: 'Honda',
+    displacement: 286,
+    fuelGauge: 10,
+    weight: 147,
+    engineStart: () => {
         console.log('Honda CB300R starts brr...')
     },
     brake: () => {
@@ -25,11 +25,11 @@ const cb300r = {
 }
 const mt03 = {
     name: 'Yamaha MT-03',
-    brand: 'Yamaha'
-	displacement: 321,
-	fuelGauge: 14,
-	weight: 168,
-	engineStart: () => {
+    brand: 'Yamaha',
+    displacement: 321,
+    fuelGauge: 14,
+    weight: 168,
+    engineStart: () => {
         console.log('Yamaha MT-03 starts brr...')
     },
     brake: () => {
@@ -38,11 +38,11 @@ const mt03 = {
 }
 const z300 = {
     name: 'Kawasaki Z300',
-    brand: 'Kawasaki'
-	displacement: 296,
-	fuelGauge: 17,
-	weight: 168,
-	engineStart: () => {
+    brand: 'Kawasaki',
+    displacement: 296,
+    fuelGauge: 17,
+    weight: 168,
+    engineStart: () => {
         console.log('Kawasaki Z300 starts brr...')
     },
     brake: () => {
@@ -62,7 +62,7 @@ const Motor = (name, brand, displacement, fuelGauge, weight) => {
     this.fuelGauge = fuelGauge
     this.weight = weight
 
-	this.engineStart = () => {
+    this.engineStart = () => {
         console.log(this.name + ' start brr...')
     } 
     this.brake = () => {
@@ -142,13 +142,14 @@ function Employee(name, age, username, password) {
     // Đây là các public property, có thể dễ dàng retrieve, modify từ các object đc khởi tạo  
     this.name = name;  
     this.age = age;
+    
     // đây là các private property, chỉ đc gán giá trị ban đầu khi khởi tạo object. Các objects đc khởi tạo không thể tự ý thay đổi giá trị này
     let username = username;
     let password = password;
     let lastDateRequestForMessage = null;
     let secretMessage = 'This message is secret';
 
-	this.login = (user, pass) => {
+    this.login = (user, pass) => {
         if(username === user && password === pass) {
             return 'Login successfully'
         } else {
@@ -210,7 +211,7 @@ function Animal(name, numLegs, numEyes) {
     this.numLegs = numLegs
     this.numEyes = numEyes
 
-	this.walk = () => {
+    this.walk = () => {
         return this.name + ' walks....'
     }
 }
@@ -249,7 +250,7 @@ function Animal(name, numLegs, numEyes) {
     this.numLegs = numLegs
     this.numEyes = numEyes
 
-	this.walk = () => {
+    this.walk = () => {
 	    console.log('called in Animal')
         return this.name + ' walks....'
     }
@@ -368,7 +369,7 @@ class Animal {
         this.numEyes = numEyes
     }
 
-	walk() {
+    walk() {
         return this.name + ' walks....'
     }
 }
