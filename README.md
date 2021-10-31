@@ -8,7 +8,7 @@ Object Oriented Programing (OOP) - Lập trình hướng đối tượng - là k
 
 ## Ví dụ tại sao cần OOP
 
-Giả sử muốn tạo 1 loại các objects để lưu các thông tin, tính năng của 1 phương tiện như sau (các object này có thể sử dụng với các mục đích khác nhau ở chỗ khác):
+Giả sử muốn tạo 1 loạt các objects để lưu các thông tin, tính năng của 1 phương tiện như sau (các object này có thể sử dụng với các mục đích khác nhau ở chỗ khác):
 ```javascript
 const cb300r = {
     name: 'Honda CB300R',
