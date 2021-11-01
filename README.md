@@ -378,7 +378,7 @@ class Animal {
 class Dog extends Animal {
     constructor(name, numLegs, numEyes, numTail) {
         super(name, numLegs, numEyes)
-        this.numTail = 1
+        this.numTail = numTail
     }
     
     bark() {
